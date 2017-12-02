@@ -1,1 +1,57 @@
+n = 6
+Array = [1,6,7,2,3,8]
+K = 2 (size of groups)
+
+1.Sort the given array in ascending order(O(nlogn)).
+Array = [1,2,3,6,7,8]
+2.Now in sorted array, traverse and take first element of every  increment of k
+
+sumMax = 0
+for i=0 to i < n
+  Do: sumMax = sumMax + arr[i]                       
+  Do: i = i + k                                       
+  
+  
+:: sumMax = 0 + 1 = 1                                                
+:: i = 0 + 2 = 2
+
+:: sumMax = 1 + 3 = 4                                               
+:: i = 2 + 2 =  4
+
+:: sumMax = 4 + 7 = 11                                               
+:: i = 4 + 2 = 6
+
+6 == n
+
+
+So maximum sum of gruop of two cntributing minimum of them is ::sumMax = 11
+
+
+
+Application of above algorithm:
+
+
+Maximum Sum of Building Speed. You are the king of Pensville where you have 2N workers.
+All workers will be grouped in association of size 2,so a total of N associations have to be formed.
+The building speed of the ith worker is Ai.
+To make an association, you pick up 2 workers. Let the minimum building speed between both workers be x, then the association has the resultant building speed x.
+You have to print the maximum value possible of the sum of building speeds of N associations if you make the associations optimally.
+
+Constraints
+1≤N≤5∗104
+1≤Ai≤104
+
+Input
+First line contains an integer N, representing the number of associations to be made.
+Next line contains N space separated integers, denoting the building speeds of 2N workers.
+
+Output
+Print the maximum value possible of the sum of building speeds of all the associations.
+
+Sample Input
+2
+1 3 1 2
+Sample Output
+3
+
 
